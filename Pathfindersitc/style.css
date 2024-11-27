@@ -1,0 +1,401 @@
+body {
+	background-color: #ddd;
+	/*background-image: url("qws.jpg");
+	background-size: cover;
+	background-position: center;*/
+	font-family: "Times New Roman", Times New Roman;
+	margin: 0;
+	padding: 0;
+}
+/*
+.loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff09d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader::after{
+	content: "";
+	width: 50px;
+	height: 50px;
+	border: 5px solid #000;
+	border-top: 5px solid transparent;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.main{
+	display: none;
+}
+*/
+header {
+	background-color: #340245CC;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 1000;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+header nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.logo{
+	width: 180px;
+	height: 150px;
+	padding-bottom: 20px;
+	float: left;
+}
+.nav-item{
+	padding-bottom: 60px;
+}
+.tog{
+	margin-bottom: 20px;
+}
+.favicon{
+	height: 64px;
+	width: 64px;
+	background-size: 64px 64px;
+}
+.hero {
+	background-color: #000000;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+	color: #fff;
+}
+
+.button{
+	background-color: #fff09d;
+	color: #3e0866;
+	font-weight: bold;
+	font-family: "Elephant", Elephant;
+	border-radius: 5px;
+	border-color: white;
+	height: 30px;
+	cursor: pointer;
+}
+
+.hero-content {
+	flex-basis: 50%;
+	padding: 20px;
+}
+
+.hero-image {
+	flex-basis: 50%;
+	text-align: right;
+}
+
+.hero-image img {
+	padding-top: 30px;
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+	animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin-bottom: 10px;
+	color: #fff09d;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+	header {
+	height: 70px;
+	}
+	.logo{
+		width: 165px;
+		height: 140px;
+		padding-bottom: 50px;
+		float: left;
+	}
+	.nav-item{
+		padding-bottom: 0px;
+	}
+	.tog{
+		margin-bottom: 65px;
+	}
+	.hero{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.hero-content {
+		display: auto;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	
+	.hero-image{
+		text-align: center;
+	}
+	.hero-image img{
+		height: auto;
+		width: 300px;
+		margin-top: 50px;
+	}
+	
+	.hero h1{
+		font-size: 27px;
+	}
+	
+	.hero h2{
+		font-size: 20px;
+		text-align: left;
+	}
+	
+	.hero-image img{
+		animation: none;
+	}
+	
+	.button{
+		margin-top: 50px;
+	}
+		
+}
+
+@media (max-width: 575px){
+	.hero-image{
+		padding-top: 50px;
+	}
+
+	.hero h1{
+		margin-top: 1px;
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
+	.hero h2{
+		font-size: 13px;
+		text-align: left;
+	}
+}
+
+
+.section-title{
+	text-align: center;
+    color: #5e4f05;
+}
+
+.intro{
+	color: #5e4f05;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.about-us{
+	background-color: #ddd;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #5e4f05;
+}
+
+#service{
+	position: relative;
+	align-items: center;
+}
+
+.lists img{
+	border-radius: 10px;
+	
+}
+
+
+.skills{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height: 650px;
+	gap: 10px;
+    justify-content: center;
+	text-align: center;
+	background-image: url("qaw.jpg");
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+	background-color: #000000cc;
+	padding-top: 10px;
+}
+
+.skill{
+	position: relative;
+	display: inline-block;
+	background-color: #fff09dcc;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #3e0866CC #ffffff #ffffff #3e0866CC;
+	border-radius: 10px;
+	width: 30%;
+	height: 300px;
+	cursor: default;
+}
+
+
+.lmore{
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	background-color: #340245;
+	color: #ffffff;
+	margin-top: 20px;
+	font-weight: ;
+	font-family: "Elephant", Elephant;
+	border-radius: 5px;
+	border-color: white;
+	margin-left: 10px;
+	height: 30px;
+	cursor: pointer;
+	float: left;
+}
+
+.skill h2{
+	text-align: center;
+	color: #3e0866
+}
+
+.skill p{
+	color: #000000;
+	margin-left: 5px;
+	font-weight: 700;
+}
+
+.image{
+	margin: 5px auto;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+.webimage{
+	margin: 5px auto;
+	display: block;
+	height: 40px; 
+	width: 40px;
+}
+
+/*Small screen styles*/
+@media only screen and (max-width: 768px) {
+  .skills{
+	align-items: center;
+	flex-direction: column;
+	height: 1800px;
+    justify-content: center;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+	background-color: #000000ef;
+	
+  }
+  
+  .skill{
+	display: inline-block;
+	background-color: #fff09dcc;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #3e0866CC #ffffff #ffffff #3e0866CC;
+	width: auto;
+	margin-left: 30px;
+	margin-right: 30px;
+	height: 280px;
+	transition: none;
+	cursor: default;
+	}
+
+	.skill h2{
+		font-size: 20px;
+	}
+	
+	.skill p{
+		font-size: 15px;
+		word-wrap: break-word;
+	}
+	.lmore{
+		background-color: #340245;
+		color: #ffffff;
+		margin-top: 5px;
+		font-weight: ;
+		font-family: "Times New Roman", Times New Roman;
+		border-radius: 5px;
+		border-color: white;
+		margin-left: 10px;
+		height: 30px;
+		cursor: pointer;
+	}
+}
+
+.contact .info {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 15px;
+}
+
+.contact img {
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+}
+
+.confd{
+	font-family: Algerian;
+	
+}
+#footer{
+	background-color: #aaa; color: #000000;
+    text-align: center;
+	padding: 5px;
+	height: 150px;
+}
