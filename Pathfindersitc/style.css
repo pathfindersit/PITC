@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-/*
+
 .loader{
 	position: fixed;
 	top: 0;
@@ -42,7 +42,7 @@ body {
 .main{
 	display: none;
 }
-*/
+
 header {
 	background-color: #340245CC;
 	color: #fff;
