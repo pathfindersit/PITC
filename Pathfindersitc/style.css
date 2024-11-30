@@ -326,7 +326,6 @@ header nav a {
 	width: 40px;
 }
 
-/*Small screen styles*/
 @media only screen and (max-width: 768px) {
   .skills{
 	align-items: center;
@@ -372,6 +371,24 @@ header nav a {
 		border-color: white;
 		margin-left: 10px;
 		height: 30px;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 679px) {
+	.skill h2{
+		font-size: 17px;
+	}
+	
+	.skill p{
+		font-size: 13px;
+		word-wrap: break-word;
+	}
+	.lmore{
+		margin-top: 5px;
+		border-radius: 5px;
+		margin-left: 10px;
+		height: 25px;
 		cursor: pointer;
 	}
 }
